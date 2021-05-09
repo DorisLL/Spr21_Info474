@@ -26382,7 +26382,7 @@ try {
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("text", {
-        x: 26,
+        x: 25,
         y: "300",
         style: {
           font: "italic 18px Times"
