@@ -2,7 +2,7 @@
   "name": "spr21_info474",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --public-url https://dorisll.github.io/Spr21_Info474/; rm -rf docs; mv dist docs;",
