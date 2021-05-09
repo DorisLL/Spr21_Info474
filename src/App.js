@@ -17,7 +17,7 @@ const App = () => {
                 
                 <line x1="0" y1="80" x2="100" y2="20" stroke="black" />
                 
-                <text x={26} y="300" style={{ font: "italic 18px Times"}}>
+                <text x={25} y="300" style={{ font: "italic 18px Times"}}>
                     Hey, this is supposed to be fancy text
                 </text>
 
