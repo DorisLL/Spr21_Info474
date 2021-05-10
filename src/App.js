@@ -1,27 +1,75 @@
 import React from "react";
+import { useFetch } from "./hooks/useFetch";
+import { A2 } from "./A2";
+import { A3 } from "./A3";
+import { A4 } from "./A4";
+import { InClass } from "./InClass";
+import { csv } from "d3-fetch";
+import { scaleLinear } from "d3-scale";
+import { extent, max, min } from "d3-array";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const viewWidth = 500;
 const viewHeight = 500;
 
-const App = () => {
-    return <svg style={{ border: "1px solid pink", 
-            width: viewWidth, height: viewHeight }}>
-                <circle cx={100} cy="50" r="5" />
-                <rect x={90} y="55" width="20" height="35" />
-                
-                <rect x={212} y={200} width={10} height={10} fill="rgb(230,230,230)"/>
-                <rect x={224} y={200} width={10} height={10} fill="rgb(230,230,230)"/>
-                <rect x={200} y={200} width={10} height={10} fill="rgb(230,230,230)"/>
-                <rect x={236} y={200} width={10} height={10} fill="rgb(230,230,230)"/>
-                <rect x={248} y={200} width={10} height={10} />
-                
-                <line x1="0" y1="80" x2="100" y2="20" stroke="black" />
-                
-                <text x={25} y="300" style={{ font: "italic 18px Times"}}>
-                    Hey, this is supposed to be fancy text
-                </text>
-
-            </svg>;
+export default function App() {
+    return (
+        <Router>
+            <div>
+                <ul>
+                    <li><Link to="/">Dashboard</Link></li>
+                    <li><Link to="/inclass">InClass</Link></li>
+                    <li><Link to="/assignment2">Assignment2</Link></li>
+                    <li><Link to="/assignment3">Assignment3</Link></li>
+                    <li><Link to="/assignment4">Assignment4</Link></li>
+                </ul>
+                <hr />
+                <Switch>
+                    <Route exact path="/"><Dashboard /></Route>
+                    <Route path="/inclass"><InClassCode /></Route>
+                    <Route path="/assignment2"><Assignment2 /></Route>
+                    <Route path="/assignment3"><Assignment3 /></Route>
+                    <Route path="/assignment4"><Assignment4 /></Route>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
-export default App;
+function InClassCode() {
+    return InClass();
+}
+
+function Dashboard() {
+    // Load data with a created function useFetch
+    // return a line "Loading Data" and do not show after loading
+    const [data, loading] = useFetch(
+        "https://raw.githubusercontent.com/DorisLL/Spr21_Info474/main/data/education.csv"
+      )
+      console.log("from hook", loading, data);
+    return (
+        <div>
+            <h2>Dashboard</h2>
+            <p>{loading && "Loading Data!"} </p>
+        </div>
+    )
+}
+
+function Assignment2() {
+    const Assignment2 = A2();
+    return Assignment2;
+}
+
+
+function Assignment3() {
+    return A3();
+  }
+  
+  function Assignment4() {
+    return A4();
+  }
