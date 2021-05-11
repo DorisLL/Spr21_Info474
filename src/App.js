@@ -22,19 +22,19 @@ export default function App() {
         <Router>
             <div>
                 <ul>
-                    <li><Link to="/">Dashboard</Link></li>
-                    <li><Link to="/inclass">InClass</Link></li>
-                    <li><Link to="/assignment2">Assignment2</Link></li>
-                    <li><Link to="/assignment3">Assignment3</Link></li>
-                    <li><Link to="/assignment4">Assignment4</Link></li>
+                    <li><Link to="/Spr21_Info474/">Dashboard</Link></li>
+                    <li><Link to="/Spr21_Info474/inclass">InClass</Link></li>
+                    <li><Link to="/Spr21_Info474/assignment2">Assignment2</Link></li>
+                    <li><Link to="/Spr21_Info474/assignment3">Assignment3</Link></li>
+                    <li><Link to="/Spr21_Info474/assignment4">Assignment4</Link></li>
                 </ul>
                 <hr />
                 <Switch>
-                    <Route exact path="/"><Dashboard /></Route>
-                    <Route path="/inclass"><InClassCode /></Route>
-                    <Route path="/assignment2"><Assignment2 /></Route>
-                    <Route path="/assignment3"><Assignment3 /></Route>
-                    <Route path="/assignment4"><Assignment4 /></Route>
+                    <Route exact path="/Spr21_Info474/"><Dashboard /></Route>
+                    <Route path="/Spr21_Info474/inclass"><InClassCode /></Route>
+                    <Route path="/Spr21_Info474/assignment2"><Assignment2 /></Route>
+                    <Route path="/Spr21_Info474/assignment3"><Assignment3 /></Route>
+                    <Route path="/Spr21_Info474/assignment4"><Assignment4 /></Route>
                 </Switch>
             </div>
         </Router>
