@@ -22,7 +22,7 @@ export default function App() {
         <Router>
             <div>
                 <ul>
-                    <li><Link to="/">Dashboard</Link></li>
+                    <li><Link to="/Spr21_Info474/">Dashboard</Link></li>
                     <li><Link to="/Spr21_Info474/inclass">InClass</Link></li>
                     <li><Link to="/Spr21_Info474/assignment2">Assignment2</Link></li>
                     <li><Link to="/Spr21_Info474/assignment3">Assignment3</Link></li>

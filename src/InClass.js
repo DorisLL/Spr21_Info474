@@ -12,8 +12,8 @@ function InClass() {
     );
     // const dataSmallSample = data.slice(0, 5000);
     const dataSmallSample = weatherData.slice(0, 5000);
-    extent(weatherData.slice(0, 5000), (d) => {
-        d.TMAX;
+    extent(dataSmallSample, (d) => {
+        return +d.TMAX;
     });
     const size = 500;
     const margin = 20;
@@ -42,7 +42,7 @@ function InClass() {
 
     const yScale = scaleLinear()
         .domain([minValueOfTMAX, maxValueOfTMAX]) //unit: km
-        .range([size, size - 250]); // unit: pixels
+        .range([size - margin, size - 400]); // unit: pixels
 
     return (
         <div>
@@ -53,29 +53,29 @@ function InClass() {
                 <text
                     x={size / 2 - 12}
                     textAnchor="end"
-                    y={size - margin + axisTextAlignmentFactor}
+                    y={yScale(0) + axisTextAlignmentFactor}
                     style={{ fontSize: 10, fontFamily: "Gill Sans, sans serif" }}
                 >0
                 </text>
                 <text
-                    x={size /2 - 12}
+                    x={size / 2 - 12}
                     textAnchor="end"
-                    y={size - margin - 100 + axisTextAlignmentFactor}
+                    y={yScale(100) + axisTextAlignmentFactor}
                     style={{ fontSize: 10, fontFamily: "Gill Sans, sans serif" }}
                 >100
                 </text>
                 <line
                     x1={size / 2 - 10}
-                    y1={size - margin - 100}
+                    y1={yScale(100)}
                     x2={size / 2 - 5}
-                    y2={size - margin - 100}
+                    y2={yScale(100)}
                     stroke={"black"}
                 />
                 <line
                     x1={size / 2 - 10}
-                    y1={yScale -  margin}
+                    y1={yScale(0)}
                     x2={size / 2 - 5}
-                    y2={yScale - margin}
+                    y2={yScale(0)}
                     stroke={"black"}
                 />
 
@@ -84,12 +84,12 @@ function InClass() {
                     return (
                         <line
                             key={index}
-                            x1={size / 2}
-                            y1={yScale(measurement.TMAX)}
-                            x2={size /  + 20}
-                            y2={yScale(measurement.TMAX)}
-                            stroke={highlight ? "red": "steelblue"}
-                            strokeOpacity={highlight? 1 : 0.1}
+                            x1={highlight ? size / 2 - 5 : size / 2 }
+                            y1={yScale(+measurement.TMAX)}
+                            x2={highlight ? size / 2 + 25 : size / 2 + 20}
+                            y2={yScale(+measurement.TMAX)}
+                            stroke={highlight ? "red" : "steelblue"}
+                            strokeOpacity={highlight? 1 : .1}
                         />
                     );
                 })}                 

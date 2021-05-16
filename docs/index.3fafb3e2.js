@@ -740,9 +740,9 @@ if ("development" !== "production") {
   })();
 }
 
-},{}],"3Imd1":[function(require,module,exports) {
+},{}],"lIEu3":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 1234;
+var HMR_PORT = 57476;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "0fa2489aa94c8731ee2aee9f3fafb3e2";
@@ -26315,7 +26315,7 @@ try {
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
-        to: "/",
+        to: "/Spr21_Info474/",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -36349,8 +36349,8 @@ try {
     const [weatherData, loading] = _hooksUseFetch.useFetch("https://raw.githubusercontent.com/DorisLL/Spr21_Info474/main/data/weather.csv");
     // const dataSmallSample = data.slice(0, 5000);
     const dataSmallSample = weatherData.slice(0, 5000);
-    _d3Array.extent(weatherData.slice(0, 5000), d => {
-      d.TMAX;
+    _d3Array.extent(dataSmallSample, d => {
+      return +d.TMAX;
     });
     const size = 500;
     const margin = 20;
@@ -36367,7 +36367,7 @@ try {
     console.log(maxValueOfTMAX, minValueOfTMAX);
     // console.log(maxValueOfTMAX) // , minValueOfTMAX);
     const yScale = _d3Scale.scaleLinear().domain([minValueOfTMAX, maxValueOfTMAX]).// unit: km
-    range([size, size - 250]);
+    range([size - margin, size - 400]);
     // unit: pixels
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -36413,7 +36413,7 @@ try {
       }, /*#__PURE__*/_reactDefault.default.createElement("text", {
         x: size / 2 - 12,
         textAnchor: "end",
-        y: size - margin + axisTextAlignmentFactor,
+        y: yScale(0) + axisTextAlignmentFactor,
         style: {
           fontSize: 10,
           fontFamily: "Gill Sans, sans serif"
@@ -36427,7 +36427,7 @@ try {
       }, "0"), /*#__PURE__*/_reactDefault.default.createElement("text", {
         x: size / 2 - 12,
         textAnchor: "end",
-        y: size - margin - 100 + axisTextAlignmentFactor,
+        y: yScale(100) + axisTextAlignmentFactor,
         style: {
           fontSize: 10,
           fontFamily: "Gill Sans, sans serif"
@@ -36440,9 +36440,9 @@ try {
         }
       }, "100"), /*#__PURE__*/_reactDefault.default.createElement("line", {
         x1: size / 2 - 10,
-        y1: size - margin - 100,
+        y1: yScale(100),
         x2: size / 2 - 5,
-        y2: size - margin - 100,
+        y2: yScale(100),
         stroke: "black",
         __self: this,
         __source: {
@@ -36452,9 +36452,9 @@ try {
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("line", {
         x1: size / 2 - 10,
-        y1: yScale - margin,
+        y1: yScale(0),
         x2: size / 2 - 5,
-        y2: yScale - margin,
+        y2: yScale(0),
         stroke: "black",
         __self: this,
         __source: {
@@ -36467,12 +36467,12 @@ try {
         return (
           /*#__PURE__*/_reactDefault.default.createElement("line", {
             key: index,
-            x1: size / 2,
-            y1: yScale(measurement.TMAX),
-            x2: size / +20,
-            y2: yScale(measurement.TMAX),
+            x1: highlight ? size / 2 - 5 : size / 2,
+            y1: yScale(+measurement.TMAX),
+            x2: highlight ? size / 2 + 25 : size / 2 + 20,
+            y2: yScale(+measurement.TMAX),
             stroke: highlight ? "red" : "steelblue",
-            strokeOpacity: highlight ? 1 : 0.1,
+            strokeOpacity: highlight ? 1 : .1,
             __self: this,
             __source: {
               fileName: _jsxFileName,
@@ -36496,6 +36496,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","d3-scale":"2UZ4X","d3-array":"7CLUA","./hooks/useFetch":"5YU3r","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3Imd1","5rkFb"], "5rkFb", "parcelRequire8e62")
+},{"react":"3b2NM","d3-scale":"2UZ4X","d3-array":"7CLUA","./hooks/useFetch":"5YU3r","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","lIEu3","5rkFb"], "5rkFb", "parcelRequire8e62")
 
 //# sourceMappingURL=index.3fafb3e2.js.map
