@@ -740,9 +740,9 @@ if ("development" !== "production") {
   })();
 }
 
-},{}],"6UAXK":[function(require,module,exports) {
+},{}],"3Imd1":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 59594;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "0fa2489aa94c8731ee2aee9f3fafb3e2";
@@ -27094,63 +27094,134 @@ try {
           lineNumber: 29,
           columnNumber: 7
         }
-      }, loading && "Loading Data!", " "), /*#__PURE__*/_reactDefault.default.createElement("ul", {
+      }, loading && "Loading Data!", " "), /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
           columnNumber: 7
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+      }, "I. About the Data"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31,
-          columnNumber: 9
+          columnNumber: 7
         }
-      }, "Data: The World Bank Data, 1960-2017", /*#__PURE__*/_reactDefault.default.createElement("ul", {
+      }, "The data I chose is ", /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "https://github.com/ZeningQu/World-Bank-Data-by-Indicators",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32,
-          columnNumber: 11
+          columnNumber: 29
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+      }, "the World Bank Data, 1960-2017"), ". It is pre-cleaned data in CSV form provided by the World Bank, aiming to track global human development for a long period of time."), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
-          columnNumber: 13
-        }
-      }, "The World Bank has tracked global human development by indicators education."), /*#__PURE__*/_reactDefault.default.createElement("li", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 13
-        }
-      }, "URL: https://github.com/ZeningQu/World-Bank-Data-by-Indicators ")))), /*#__PURE__*/_reactDefault.default.createElement("h3", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 36,
           columnNumber: 7
         }
-      }, "Q1: Trends of Adolescents out of school rate (% of lower secondary school age) over time"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
+      }, "The specific data used in the visualizations below are about education all around the world from 1960 to 2017. We are able to explore some patterns of the education developed throughout time."), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41,
           columnNumber: 7
         }
+      }, "The data includes data about:", /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 11
+        }
+      }, "Unemployment data counted with gender from International Labour Organization, retrieved in September 2018"), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 11
+        }
+      }, "Gross enrollment ratio, regardless of age in different grades, retrieved from UNESCO Institute for Statistics"), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 11
+        }
+      }, "Adolescents out of school rate in percentage in different grades, retrieved from UNESCO Institute for Statistics"), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 11
+        }
+      }, "Number of teachers in different genders and different grades, including both full-time and part-time ones, retrieved from UNESCO Institute for Statistics"), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 11
+        }
+      }, "Other information, like the compensation for teachers, educational attainment, etc."))), /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 7
+        }
+      }, "II. Ratinale for Design"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 7
+        }
+      }, "I chose this data because I have always been told that education is one of the most important to the development of societies and countries and as in the recent two decades, the world has been changing and developing so fast, I am curious about how education and education related data changes along."), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 7
+        }
+      }, "Since the data is pre-cleaned, it is easier to be used and saved some time in cleaning the data."), /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 7
+        }
+      }, "III. Visualizations"), /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 7
+        }
+      }, "Q1: Trends of Adolescents out of school rate (% of lower secondary school age) over time"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 7
+        }
       }, "Especially for East Asia and Pacific area"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 63,
           columnNumber: 7
         }
-      }, "The first topic is related to the adolescents out of school rate. Especially for East Asia and Pacific area. From the red lines we are able to see the trend that the rate is going down over time, which is great and implying that education has been considered as more inmportant. "), /*#__PURE__*/_reactDefault.default.createElement("svg", {
+      }, "The first topic is related to the adolescents out of school rate. Especially for East Asia and Pacific area. From the red lines we are able to see the trend that the rate is going down over time, which is great and implying that education has been considered as more important. "), /*#__PURE__*/_reactDefault.default.createElement("svg", {
         width: width,
         /*1000*/
         height: height,
@@ -27161,7 +27232,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 64,
           columnNumber: 7
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("line", {
@@ -27173,7 +27244,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 69,
           columnNumber: 9
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27187,7 +27258,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55,
+          lineNumber: 76,
           columnNumber: 9
         }
       }, "Trends of Adolescents out of school rate over time"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27201,7 +27272,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 82,
           columnNumber: 9
         }
       }, "1960"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27215,7 +27286,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68,
+          lineNumber: 89,
           columnNumber: 9
         }
       }, "2017"), data.map((data, index) => {
@@ -27232,7 +27303,7 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 78,
+              lineNumber: 99,
               columnNumber: 13
             }
           })
@@ -27241,14 +27312,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94,
+          lineNumber: 115,
           columnNumber: 9
         }
       }, "Q2: Number of teachers for secondary education for China from 1960 - 2017"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95,
+          lineNumber: 116,
           columnNumber: 9
         }
       }, " The second topic is related to the number of teachers for secondary education for China over time. It shows an increase of teachers. From the trend, I may say that education is in public considered as important and more and more people have it as occupation."), /*#__PURE__*/_reactDefault.default.createElement("svg", {
@@ -27262,7 +27333,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96,
+          lineNumber: 117,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27276,7 +27347,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 121,
           columnNumber: 11
         }
       }, "Number of Teachers for Secondary Education in China from 1960 - 2017"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27289,7 +27360,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 127,
           columnNumber: 11
         }
       }, "1960"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27303,7 +27374,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112,
+          lineNumber: 133,
           columnNumber: 9
         }
       }, "2017"), data.map((filterChina, index) => {
@@ -27319,7 +27390,7 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 121,
+              lineNumber: 142,
               columnNumber: 13
             }
           })
@@ -27328,21 +27399,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134,
+          lineNumber: 155,
           columnNumber: 7
         }
       }, "Q3: The trend of female school enrollment for secondary school from 1960 - 2017"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135,
+          lineNumber: 156,
           columnNumber: 7
         }
       }, "Especially for China"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 157,
           columnNumber: 7
         }
       }, "The third one is related to female school enrollment for secondary school from 1960 - 2017. It does not show a whole lot of changes, especially for China, which is in red. "), /*#__PURE__*/_reactDefault.default.createElement("svg", {
@@ -27356,7 +27427,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137,
+          lineNumber: 158,
           columnNumber: 7
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("line", {
@@ -27368,7 +27439,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142,
+          lineNumber: 163,
           columnNumber: 9
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27382,7 +27453,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149,
+          lineNumber: 170,
           columnNumber: 9
         }
       }, "The trend of female school enrollment for secondary school from 1960 - 2017"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27396,7 +27467,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156,
+          lineNumber: 177,
           columnNumber: 9
         }
       }, "1960"), /*#__PURE__*/_reactDefault.default.createElement("text", {
@@ -27410,7 +27481,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163,
+          lineNumber: 184,
           columnNumber: 9
         }
       }, "2017"), data.map((data, index) => {
@@ -27427,7 +27498,7 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 173,
+              lineNumber: 194,
               columnNumber: 13
             }
           })
@@ -27436,14 +27507,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188,
+          lineNumber: 209,
           columnNumber: 7
         }
       }, "Q4: Adolescents out of school (% of lower secondary school age) for China "), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189,
+          lineNumber: 210,
           columnNumber: 7
         }
       }, " The last one is related to Adolescents out of school rate again, this time focused on China specifically. It shows that the rate for China is relateively small. "), /*#__PURE__*/_reactDefault.default.createElement("svg", {
@@ -27455,7 +27526,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190,
+          lineNumber: 211,
           columnNumber: 7
         }
       }, data.slice(0, 1000).map((data, index) => {
@@ -27474,12 +27545,33 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 198,
+              lineNumber: 219,
               columnNumber: 13
             }
           })
         );
-      })))
+      })), /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 237,
+          columnNumber: 7
+        }
+      }, "IV. Write-Up Summary"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 238,
+          columnNumber: 7
+        }
+      }, "From the 4 visualizations displayed above, we are able to see a general trends of how Asia education developed, especially for China individually. In general, we are able to see a decrease of drop-out rate from school in East Asia and Pacific area, while the number of teachers in secondary school increases from 1960 to 2017."), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 242,
+          columnNumber: 7
+        }
+      }, "In addition, we see that although clear increasing and decreasing patterns show for the teacher numbers and drop-out school rate, the female school enrollment for secondary school did not show a clear increase or decrease. Also, it is great to se  that the adolescents out of school rate (% of lower secondary school age) for China is relativley low."))
     );
   }
   _s(A2, "Jm65JCcgUFoenM4DufkEA80vRVI=", false, function () {
@@ -36272,7 +36364,15 @@ try {
           lineNumber: 7,
           columnNumber: 13
         }
-      }, "This is a placeholder for Assignment 3~~~"))
+      }, "This is a placeholder for Assignment 3~~~"), /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "https://lruan001.github.io/react-parcel-test-upload2/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 13
+        }
+      }, "Here is the link to Assignment 3"))
     );
   }
   _c = A3;
@@ -78378,6 +78478,6 @@ exports.default = {
   }
 };
 
-},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","6UAXK","5rkFb"], "5rkFb", "parcelRequire8e62")
+},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3Imd1","5rkFb"], "5rkFb", "parcelRequire8e62")
 
 //# sourceMappingURL=index.3fafb3e2.js.map

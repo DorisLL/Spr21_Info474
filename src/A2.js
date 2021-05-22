@@ -27,19 +27,40 @@ function A2() {
     <div>
       <h1>Assignment 2: Exploratory Data Analysis</h1>
       <p>{loading && "Loading Data!"} </p>
-      <ul>
-        <li>Data: The World Bank Data, 1960-2017
-          <ul>
-            <li>The World Bank has tracked global human development by indicators education.</li>
-            <li>URL: https://github.com/ZeningQu/World-Bank-Data-by-Indicators </li>
-          </ul>
-        </li>
-      </ul>
-
+      <h2>I. About the Data</h2>
+      <p>
+        The data I chose is <a href="https://github.com/ZeningQu/World-Bank-Data-by-Indicators">the World Bank Data, 1960-2017</a>.
+        It is pre-cleaned data in CSV form provided by the World Bank, 
+        aiming to track global human development for a long period of time. 
+      </p>
+      <p>
+        The specific data used in the visualizations below
+        are about education all around the world from 1960 to 2017. 
+        We are able to explore some patterns of the education developed throughout time. 
+      </p>
+      <p>
+        The data includes data about:
+        <ul>
+          <li>Unemployment data counted with gender from International Labour Organization, retrieved in September 2018</li>
+          <li>Gross enrollment ratio, regardless of age in different grades, retrieved from UNESCO Institute for Statistics</li>
+          <li>Adolescents out of school rate in percentage in different grades, retrieved from UNESCO Institute for Statistics</li>
+          <li>Number of teachers in different genders and different grades, including both full-time and part-time ones, retrieved from UNESCO Institute for Statistics</li>
+          <li>Other information, like the compensation for teachers, educational attainment, etc.</li>
+          </ul> 
+      </p>
+      <h2>II. Ratinale for Design</h2>
+      <p>
+        I chose this data because I have always been told that education is one of the most important to the development of societies and countries and as in the recent two decades, 
+        the world has been changing and developing so fast, I am curious about how education and education related data changes along.  
+      </p>
+      <p>
+        Since the data is pre-cleaned, it is easier to be used and saved some time in cleaning the data.  
+      </p>
+      <h2>III. Visualizations</h2>
       {/* Adolescents out of school (% of lower secondary school age) */}
       <h3>Q1: Trends of Adolescents out of school rate (% of lower secondary school age) over time</h3>
       <h4>Especially for East Asia and Pacific area</h4>
-      <p>The first topic is related to the adolescents out of school rate. Especially for East Asia and Pacific area. From the red lines we are able to see the trend that the rate is going down over time, which is great and implying that education has been considered as more inmportant. </p>
+      <p>The first topic is related to the adolescents out of school rate. Especially for East Asia and Pacific area. From the red lines we are able to see the trend that the rate is going down over time, which is great and implying that education has been considered as more important. </p>
       <svg 
         width={width} // 1000
         height={height}  // 500
@@ -213,6 +234,15 @@ function A2() {
           );
         })}
       </svg> 
+      <h2>IV. Write-Up Summary</h2>
+      <p>
+        From the 4 visualizations displayed above, we are able to see a general trends of how Asia education developed, especially for China individually. 
+        In general, we are able to see a decrease of drop-out rate from school in East Asia and Pacific area, while the number of teachers in secondary school increases from 1960 to 2017.
+      </p>
+      <p>
+        In addition, we see that although clear increasing and decreasing patterns show for the teacher numbers and drop-out school rate, the female school enrollment for secondary school did not show 
+        a clear increase or decrease. Also, it is great to se  that the adolescents out of school rate (% of lower secondary school age) for China is relativley low. 
+      </p>
     </div>
   );
 }
